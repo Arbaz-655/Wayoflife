@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".loginpage">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/waylogo" />
+
+    <TextView
+        android:id="@+id/emlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginBottom="291dp"
+        android:fontFamily="serif"
+        android:text="Email:"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="242dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="example@address.com"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="18dp"
+        tools:paddingStart="10dp" />
+
+    <TextView
+        android:id="@+id/passwordlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailtext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="-75dp"
+        android:fontFamily="serif"
+        android:text="Password:"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="162dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="textStart"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/logintohome"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="108dp"
+        android:background="@android:color/holo_blue_light"
+        android:fontFamily="serif"
+        android:text="Log In"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#172686"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:text="@string/log" />
+
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailtext"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginBottom="-172dp"
+        android:text="Forgotten password?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#172686"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="27dp"
+        android:layout_toEndOf="@+id/emlog"
+        android:text="New User? Sign Up"
+        android:textColor="#172686"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

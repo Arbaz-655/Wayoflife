@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page">
+
+
+    <ImageView
+        android:id="@+id/waylogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="99dp"
+        app:srcCompat="@drawable/waylogo" />
+
+    <Button
+        android:id="@+id/adminlog"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="314dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/button"
+        android:text="Admin Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#172686"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/userlog"
+        android:layout_width="314dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Sign"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/button"
+        android:text="User Login"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#172686"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="148dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="OR"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</RelativeLayout>
